@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "EBS Online Class Utility",
+    "description": "EBS Online Class Utility",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "*://oc.ebssw.kr/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [ "*://oc.ebssw.kr/" ],
+            "run_at": "document_idle",
+            "js": [ "autofill.js" ]
+        }
+    ]
+}
