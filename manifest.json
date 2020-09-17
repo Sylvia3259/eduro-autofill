@@ -1,17 +1,17 @@
 {
     "manifest_version": 2,
-    "name": "EBS Online Class Utility",
-    "description": "EBS Online Class Utility",
+    "name": "Eduro Self-diagnosis Utility",
+    "description": "Eduro Self-diagnosis Utility",
     "version": "1.0",
     "permissions": [
         "tabs",
-        "*://oc.ebssw.kr/*"
+        "*://hcs.eduro.go.kr/*",
+        "storage"
     ],
-    "content_scripts": [
-        {
-            "matches": [ "*://oc.ebssw.kr/" ],
-            "run_at": "document_idle",
-            "js": [ "autofill.js" ]
-        }
-    ]
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [ "background.js" ]
+    }
 }
