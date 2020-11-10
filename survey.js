@@ -1,6 +1,6 @@
 setTimeout(() => {
     var answers = new Array();
-    for (var i = 1; i <= 5; i++)
+    for (var i = 1; i <= 3; i++)
         answers.push(document.querySelector('#survey_q' + i + 'a1'));
 
     var confirmButton = document.querySelector('#btnConfirm');
