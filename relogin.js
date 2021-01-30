@@ -1,5 +1,5 @@
 setTimeout(() => {
-    var passwordInput = document.querySelector('input');
+    var passwordInput = document.querySelector('input[type="password"]');
     var confirmButton = document.querySelector('#btnConfirm');
 
     if (!passwordInput) return;
